@@ -12,11 +12,7 @@ module downsampler_4 #(parameter WIDTH = 16)(
             data_out <= 16'h0000;
         end else begin  
             if (count == 2'b11) begin
-                if (data_in[11])begin
-                    data_out <= data_in;
-                end else begin
-                    data_out <= data_in;
-                end
+                data_out <= data_in;
             end
         end
     end 
