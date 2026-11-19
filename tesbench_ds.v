@@ -5,7 +5,7 @@ module testbench_ds();
           reset;
     reg   ready;
     
-    reg  [11:0] data_in;
+    reg  [15:0] data_in;
     wire  [15:0] data_out;
     
     downsampler_4 ds_4(reset, ready,data_in, data_out);
@@ -18,87 +18,87 @@ module testbench_ds();
         #50
         reset = 1'b0;  
         #40
-        data_in = 16'h806;
+        data_in = 16'h6806;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h855;
+        data_in = 16'h8555;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h135;
+        data_in = 16'h1345;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h271;
+        data_in = 16'h2731;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h643;
+        data_in = 16'h6423;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h037;
+        data_in = 16'h1037;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h065;
+        data_in = 16'h9065;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h834;
+        data_in = 16'h8384;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h868;
+        data_in = 16'h8678;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h593;
+        data_in = 16'h5963;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h159;
+        data_in = 16'h1595;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h818;
+        data_in = 16'h8184;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h432;
+        data_in = 16'h4332;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h410;
+        data_in = 16'h2410;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h170;
+        data_in = 16'h1710;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h607;
+        data_in = 16'h6207;
         ready = 1'b1;
         #10
         ready = 1'b0;
         #40
-        data_in = 16'h998;
+        data_in = 16'h9908;
         ready = 1'b1;
         #10
         ready = 1'b0;
